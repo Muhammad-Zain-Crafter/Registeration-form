@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #096d79;
+}
+.myForm {
+    width: 350px;
+    padding: 1rem;
+    background-color: rgba(245, 245, 245, 0.976);
+    border-radius: 0.5rem;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h1 {
+    text-align: center;
+}
+button {
+    padding: 1rem;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #096d79;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input-control {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.input-control input {
+    border: 2px solid white;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+.input-control input:focus {
+    outline: 0;
+}
+.input-control.success input {
+    border-color: #09c372;
+}
+.input-control.error input {
+    border-color: red;
+}
+.input-control .error {
+    color: red;
+    font-size: 12px;
+    height: 12px;
+}
+@media (max-width: 768px) {
+    .myForm {
+        width: 90%;
+        max-width: 350px;
+    }
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .input-control input {
+        padding: 8px;
+    }
+}
+@media (max-width: 480px) {
+    .myForm {
+        width: 95%;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .input-control input {
+        padding: 6px;
+    }
+}
